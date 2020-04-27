@@ -24,6 +24,8 @@
               ],
               "styles": [
                 "site.css",
+                "kendo-theme.css",
+                "kendo-theme-custom-components.css",
                 "material-edited.css",
                 "outreach-efforts.css"
               ],
