@@ -1,6 +1,6 @@
 <div class="main-wrapper">
         <div class="header">
-    <div class="logo"><img src="images/logo.png" alt="Biddle Portal Shell"/></div>
+    <div class="logo"><img src="https://raw.githubusercontent.com/yazs2020/yazs-test/master/images/logo.png" alt="Biddle Portal Shell"/></div>
     <div class="top-nav">
     </div>
   </div>
@@ -29,15 +29,54 @@
       </div>
     </div>
     <div class="right-content" id="content-section">
-            <!-- page navigation -->
+      <!-- page navigation -->
       <div class="page-title">
         <h2>Outreach Efforts</h2>
       </div>
 
       <div class="clear"></div>
-      <div class="content k-content" role="application">
+      <!-- end of page navigation -->
+		
+		
+	<!---------------------------------- CONTENT --------------------------------->
+      <div class="content k-content" role="application"> 
+        
+        <!------- bx-topbar ------->
+        <div class="bx-topbar"> 
+          <!-- organization -->
+          <div class="col-left">
+			  <div class="k-form-inline">
+            <label class="k-form-field" for="ana-models">
+				<span>Analysis Model</span>
+              <select id="ana-models" placeholder="Select Analysis Model" style="width: 270px;" >
+                <option>AAPs</option>
+              </select>
+            </label>
+          </div></div>
+          <div class="col-right col-wide">
+
+          </div>
+          <div class="clear mbot15"></div>
+        </div>
+		  
+        <!------- end of bx-topbar -------> 
+        
+        <!------- bx-btnbar ------->
+        <div class="bx-btnbar">
+         <div class="col-left col-wide">
+          <button type="button" class="k-button k-primary"><span class="k-icon icon-add-row"></span> <span class="item-label">Add Row</span></button>
+          <button type="button" class="k-button k-primary"><span class="k-icon icon-redo2"></span> <span class="item-label">Import</span></button>
+			<button type="button" class="k-button k-primary"><span class="k-icon icon-edit"></span> <span class="item-label">Edit</span></button>
+			 <div class="e-disabled" style="display: inline-block; margin: 0; padding: 0;"><button id="downloadbtn"></button></div>
+          <button type="button" class="k-button k-primary"><span class="k-icon icon-table-options"></span> <span class="item-label">Options</span></button>
+          </div>
+          <div class="col-right">
+          </div>         
+          <div class="clear"></div>
+        </div>
+       <!------- end of bx-btnbar ------->   
         <div class="grid-wrapper">
-    <ejs-grid [dataSource]='data' allowPaging='true' height="100%" width="100%" [enableHover]="true" [allowSelection]="true" [selectionSettings]="selectOptions" [editSettings]='editSettings' allowTextWrap='true'  >
+    <ejs-grid [dataSource]='data' [gridLines]="Both" allowPaging='true' height="100%" width="100%" [enableHover]="true" [allowSelection]="true" [selectionSettings]="selectOptions" [editSettings]='editSettings' allowTextWrap='true'  >
         <e-columns>
             <e-column type='checkbox' width='30'></e-column>
             <e-column field='OrderID' isPrimaryKey='true' headerText='Date' width='84' textAlign='Left'></e-column>
