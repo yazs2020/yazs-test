@@ -1,0 +1,58 @@
+<div class="main-wrapper">
+        <div class="header">
+    <div class="logo"><img src="images/logo.png" alt="Biddle Portal Shell"/></div>
+    <div class="top-nav">
+    </div>
+  </div>
+  <div class="container sidebar-expanded" id="main-section">
+
+
+      <div class="sidebar-wrap">
+      <div class="sidebar"> 
+        
+        <!-- sidebar navigation -->
+        
+        <nav class="nav-sidebar"> <a href="#" id="collapse-nav"><span id="toggle-collapse" class="item-ico icon-angle-double-left"></span> <span class="item-label">Menu</span></a> 
+			<a href="#"><span class="item-ico icon-home"></span> <span class="item-label">Welcome</span></a> 
+			<a href="#"><span class="item-ico icon-cogs"></span> <span class="item-label">System</span></a> 
+			<a href="#"><span class="item-ico icon-building-o"></span> <span class="item-label">My Organization</span></a> 
+			<a href="#"><span class="item-ico icon-archive"></span> <span class="item-label">Files</span></a> 
+			<a href="#"><span class="item-ico icon-chart"></span> <span class="item-label">Dashboard</span></a> 
+			<a href="#"><span class="item-ico icon-logo-bcgi"></span> <span class="item-label">BCG Institute</span></a> 
+			<a href="#"><span class="item-ico icon-logo-icon"></span> <span class="item-label">myAAP</span></a>
+			<a href="#"><span class="item-ico icon-calculator"></span> <span class="item-label">Impact Evaluator</span></a> 
+			<a href="#" class="active"><span class="item-ico icon-outreach"></span> <span class="item-label">Outreach Efforts</span></a> 
+			<a href="#"><span class="item-ico icon-comments"></span> <span class="item-label">Support</span></a> </nav>
+        
+        <!-- end of sidebar navigation --> 
+        
+      </div>
+    </div>
+    <div class="right-content" id="content-section">
+            <!-- page navigation -->
+      <div class="page-title">
+        <h2>Outreach Efforts</h2>
+      </div>
+
+      <div class="clear"></div>
+      <div class="content k-content" role="application">
+        <div class="grid-wrapper">
+    <ejs-grid [dataSource]='data' allowPaging='true' height="100%" width="100%" [enableHover]="true" [allowSelection]="true" [selectionSettings]="selectOptions" [editSettings]='editSettings' allowTextWrap='true'  >
+        <e-columns>
+            <e-column type='checkbox' width='30'></e-column>
+            <e-column field='OrderID' isPrimaryKey='true' headerText='Date' width='84' textAlign='Left'></e-column>
+            <e-column field='CustomerName' headerText='Activity/Service/Website' width='170'></e-column>
+            <e-column field='OrderDate' headerText='Brief Description' width='172' format="yMd" textAlign='Left'></e-column>
+            <e-column field='Freight' headerText='Protected Group' width='77' format='C2' textAlign='Center'></e-column>
+            <e-column field='ShippedDate' headerText='Effectiveness(scale)' width='98' format="yMd" textAlign='Center'></e-column>
+            <e-column field='ShipAddress' headerText='Evaluation' width='180' format="yMd" textAlign='Left'></e-column>
+            <e-column field='ShipCity' headerText='Attachments' width='98' format="yMd" textAlign='Left'></e-column>
+            <e-column field='ShipRegion' headerText='User' width='98' format="yMd" textAlign='Left'></e-column>
+            <e-column field='ShipCountry' headerText='Plan/Location' width='100' format="yMd" textAlign='Center'></e-column>
+        </e-columns>
+    </ejs-grid>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
