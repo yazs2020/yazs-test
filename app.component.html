@@ -68,7 +68,12 @@
           <button type="button" class="k-button k-primary"><span class="k-icon icon-redo2"></span> <span class="item-label">Import</span></button>
 			<button type="button" class="k-button k-primary"><span class="k-icon icon-edit"></span> <span class="item-label">Edit</span></button>
 			 <div class="e-disabled" style="display: inline-block; margin: 0; padding: 0;"><button id="downloadbtn"></button></div>
-          <button type="button" class="k-button k-primary"><span class="k-icon icon-table-options"></span> <span class="item-label">Options</span></button>
+          
+           <!-- Tooltip element -->
+        <ejs-tooltip #tooltip content='Your info text goes here. Place holder.' style="display:block;position:absolute;left:calc( 50% - 60px);top:0%;">
+          <button  ejs-button type="button" class="k-button k-primary"><span class="k-icon icon-table-options"></span> <span class="item-label">Options</span></button>
+</ejs-tooltip>
+        
           </div>
           <div class="col-right">
           </div>         

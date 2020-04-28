@@ -6,6 +6,8 @@ import { ToolbarModule } from '@syncfusion/ej2-angular-navigations';
 
 import { NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs';
 
+import { TooltipModule } from '@syncfusion/ej2-angular-popups';
+
 import { DialogModule } from '@syncfusion/ej2-angular-popups';
 
 import { GridAllModule } from '@syncfusion/ej2-angular-grids';
@@ -19,6 +21,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from '../app.component';
 
-@NgModule({ declarations: [ AppComponent ], imports: [ CommonModule, HttpModule, ToolbarModule, GridAllModule, BrowserModule,       NumericTextBoxAllModule, DialogModule, DatePickerAllModule, DropDownListAllModule, ReactiveFormsModule, FormsModule], providers: [], bootstrap: [AppComponent]
+@NgModule({ declarations: [ AppComponent ], imports: [ TooltipModule, CommonModule, HttpModule, ToolbarModule, GridAllModule, BrowserModule,       NumericTextBoxAllModule, DialogModule, DatePickerAllModule, DropDownListAllModule, ReactiveFormsModule, FormsModule], providers: [], bootstrap: [AppComponent]
 })
 export class AppModule { }
