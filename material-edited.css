@@ -14180,7 +14180,7 @@ ejs-multiselect {
   border-top: 8px solid #99ADBF;
 }
 .e-tooltip-wrap .e-arrow-tip-outer.e-tip-top {
-  border-bottom: px solid #99ADBF;
+  border-bottom: 8px solid #99ADBF;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
 }
@@ -14202,7 +14202,7 @@ ejs-multiselect {
 }
 .e-tooltip-wrap .e-arrow-tip-inner.e-tip-right, .e-tooltip-wrap .e-arrow-tip-inner.e-tip-left, .e-tooltip-wrap .e-arrow-tip-inner.e-tip-bottom, .e-tooltip-wrap .e-arrow-tip-inner.e-tip-top {
   color: #99ADBF;
-  font-family: 'myAAPicons';
+  font-family: 'e-icons';
   font-size: 16px;
   font-style: normal;
   font-variant: normal;
@@ -14214,7 +14214,7 @@ ejs-multiselect {
   background-color: #fff;
   border-color: transparent;
   border-radius: 8px;
-  color: #616161;
+  color: #99ADBF;
 }
 .e-tooltip-wrap .e-tooltip-close:hover {
   background-color: #fff;
@@ -14223,7 +14223,7 @@ ejs-multiselect {
 .e-tooltip-wrap .e-tip-content {
   color: #fff;
   font-family: 'Open Sans', sans-serif;
-  font-size: 11px;
+  font-size: 12px;
 }
 /*! bigger style */
 .e-bigger .e-tooltip-wrap .e-tip-content, .e-tooltip-wrap.e-bigger .e-tip-content {
